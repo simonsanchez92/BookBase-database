@@ -1,0 +1,70 @@
+[1mdiff --git a/creationQueries.sql b/creationQueries.sql[m
+[1mdeleted file mode 100644[m
+[1mindex 0bc7e31..0000000[m
+[1m--- a/creationQueries.sql[m
+[1m+++ /dev/null[m
+[36m@@ -1,36 +0,0 @@[m
+[31m-CREATE TABLE Users ([m
+[31m-    id SERIAL PRIMARY KEY,[m
+[31m-    username VARCHAR(100) UNIQUE NOT NULL,[m
+[31m-    email VARCHAR(150) UNIQUE NOT NULL,[m
+[31m-    first_name VARCHAR(100) NOT NULL,[m
+[31m-    last_name VARCHAR(100) NOT NULL,[m
+[31m-    password_hash VARCHAR(150) NOT NULL[m
+[31m-);[m
+[31m-[m
+[31m-[m
+[31m-CREATE TABLE Genres([m
+[31m-    id SERIAL PRIMARY KEY,[m
+[31m-    description varchar(100) UNIQUE NOT NULL[m
+[31m-);[m
+[31m-[m
+[31m-CREATE TABLE Languages([m
+[31m-    id SERIAL PRIMARY KEY,[m
+[31m-    description VARCHAR(100) UNIQUE NOT NULL[m
+[31m-);[m
+[31m-[m
+[31m-CREATE TABLE Books([m
+[31m-    id SERIAL,[m
+[31m-    title VARCHAR(255) UNIQUE NOT NULL,[m
+[31m-    author varchar(150) NOT NULL,[m
+[31m-    genre INT NOT NULL,[m
+[31m-    isbn varchar (20) NOT NULL,[m
+[31m-    publication_date DATE not null,[m
+[31m-    language INT NOT NULL,[m
+[31m-    PRIMARY KEY(id),[m
+[31m-    FOREIGN KEY (genre) REFERENCES Genres(id),[m
+[31m-    FOREIGN KEY (language) REFERENCES Languages(id)[m
+[31m-);[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[1mdiff --git a/insertQueries.sql b/insertQueries.sql[m
+[1mdeleted file mode 100644[m
+[1mindex d65cb11..0000000[m
+[1m--- a/insertQueries.sql[m
+[1m+++ /dev/null[m
+[36m@@ -1,22 +0,0 @@[m
+[31m-insert into Users(username, email, first_name, last_name, password_hash) values ('simonsanchez', 'simonsanchez.1992@gmail.com', 'Simon', 'Sanchez', 'password123456');[m
+[31m-INSERT INTO Users (username, email, first_name, last_name, password_hash) VALUES[m
+[31m-('johndoe', 'johndoe@example.com', 'John', 'Doe', 'hashed_password_1'),[m
+[31m-('janedoe', 'janedoe@example.com', 'Jane', 'Doe', 'hashed_password_2'),[m
+[31m-('alice_smith', 'alice.smith@example.com', 'Alice', 'Smith', 'hashed_password_3'),[m
+[31m-('bob_johnson', 'bob.johnson@example.com', 'Bob', 'Johnson', 'hashed_password_4'),[m
+[31m-('carol_brown', 'carol.brown@example.com', 'Carol', 'Brown', 'hashed_password_5'),[m
+[31m-('david_wilson', 'david.wilson@example.com', 'David', 'Wilson', 'hashed_password_6'),[m
+[31m-('emily_jones', 'emily.jones@example.com', 'Emily', 'Jones', 'hashed_password_7'),[m
+[31m-('frank_miller', 'frank.miller@example.com', 'Frank', 'Miller', 'hashed_password_8'),[m
+[31m-('grace_taylor', 'grace.taylor@example.com', 'Grace', 'Taylor', 'hashed_password_9'),[m
+[31m-('henry_anderson', 'henry.anderson@example.com', 'Henry', 'Anderson', 'hashed_password_10'),[m
+[31m-('isla_lee', 'isla.lee@example.com', 'Isla', 'Lee', 'hashed_password_11'),[m
+[31m-('jack_clark', 'jack.clark@example.com', 'Jack', 'Clark', 'hashed_password_12'),[m
+[31m-('karen_wright', 'karen.wright@example.com', 'Karen', 'Wright', 'hashed_password_13'),[m
+[31m-('luke_harris', 'luke.harris@example.com', 'Luke', 'Harris', 'hashed_password_14'),[m
+[31m-('mia_martin', 'mia.martin@example.com', 'Mia', 'Martin', 'hashed_password_15'),[m
+[31m-('nate_rodgers', 'nate.rodgers@example.com', 'Nate', 'Rodgers', 'hashed_password_16'),[m
+[31m-('olivia_white', 'olivia.white@example.com', 'Olivia', 'White', 'hashed_password_17'),[m
+[31m-('paul_martinez', 'paul.martinez@example.com', 'Paul', 'Martinez', 'hashed_password_18'),[m
+[31m-('quinn_lee', 'quinn.lee@example.com', 'Quinn', 'Lee', 'hashed_password_19'),[m
+[31m-('rachel_smith', 'rachel.smith@example.com', 'Rachel', 'Smith', 'hashed_password_20');[m
