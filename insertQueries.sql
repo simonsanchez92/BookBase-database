@@ -1,0 +1,22 @@
+insert into Users(username, email, first_name, last_name, password_hash) values ('simonsanchez', 'simonsanchez.1992@gmail.com', 'Simon', 'Sanchez', 'password123456');
+INSERT INTO Users (username, email, first_name, last_name, password_hash) VALUES
+('johndoe', 'johndoe@example.com', 'John', 'Doe', 'hashed_password_1'),
+('janedoe', 'janedoe@example.com', 'Jane', 'Doe', 'hashed_password_2'),
+('alice_smith', 'alice.smith@example.com', 'Alice', 'Smith', 'hashed_password_3'),
+('bob_johnson', 'bob.johnson@example.com', 'Bob', 'Johnson', 'hashed_password_4'),
+('carol_brown', 'carol.brown@example.com', 'Carol', 'Brown', 'hashed_password_5'),
+('david_wilson', 'david.wilson@example.com', 'David', 'Wilson', 'hashed_password_6'),
+('emily_jones', 'emily.jones@example.com', 'Emily', 'Jones', 'hashed_password_7'),
+('frank_miller', 'frank.miller@example.com', 'Frank', 'Miller', 'hashed_password_8'),
+('grace_taylor', 'grace.taylor@example.com', 'Grace', 'Taylor', 'hashed_password_9'),
+('henry_anderson', 'henry.anderson@example.com', 'Henry', 'Anderson', 'hashed_password_10'),
+('isla_lee', 'isla.lee@example.com', 'Isla', 'Lee', 'hashed_password_11'),
+('jack_clark', 'jack.clark@example.com', 'Jack', 'Clark', 'hashed_password_12'),
+('karen_wright', 'karen.wright@example.com', 'Karen', 'Wright', 'hashed_password_13'),
+('luke_harris', 'luke.harris@example.com', 'Luke', 'Harris', 'hashed_password_14'),
+('mia_martin', 'mia.martin@example.com', 'Mia', 'Martin', 'hashed_password_15'),
+('nate_rodgers', 'nate.rodgers@example.com', 'Nate', 'Rodgers', 'hashed_password_16'),
+('olivia_white', 'olivia.white@example.com', 'Olivia', 'White', 'hashed_password_17'),
+('paul_martinez', 'paul.martinez@example.com', 'Paul', 'Martinez', 'hashed_password_18'),
+('quinn_lee', 'quinn.lee@example.com', 'Quinn', 'Lee', 'hashed_password_19'),
+('rachel_smith', 'rachel.smith@example.com', 'Rachel', 'Smith', 'hashed_password_20');
